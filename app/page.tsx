@@ -10,7 +10,6 @@ export default function Page() {
   const [started, setStarted] = useState(false);
   const setWizard = useScanStore((s) => s.setWizard);
   const { videoRef, canvasRef } = useCameraScanner(started);
-
   return (
     <main className="mx-auto max-w-7xl space-y-4 p-4">
       {!started ? (
