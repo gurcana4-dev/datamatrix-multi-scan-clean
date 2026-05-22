@@ -5,7 +5,6 @@ import type { DecodedItem } from "@/types/domain";
 
 let initialized = false;
 const jsReader = new MultiFormatReader();
-
 async function init() {
   if (initialized) return;
   await prepareZXingModule({
