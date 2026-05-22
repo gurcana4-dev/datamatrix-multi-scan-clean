@@ -1,5 +1,4 @@
 "use client";
-
 import { useMemo } from "react";
 import { useScanStore } from "@/hooks/use-scan-store";
 import { exportEventsToExcel } from "@/services/export/xlsx-export";
@@ -20,7 +19,7 @@ export function Dashboard() {
         <div className="mb-2 flex gap-3 text-sm text-slate-300">
           <span>FPS: {fps}</span>
           <span>Decode: {decodeMs}ms</span>
-          <span>Çözünürlük: {resolution}</span>
+          <span>Ã‡Ã¶zÃ¼nÃ¼rlÃ¼k: {resolution}</span>
         </div>
         <div className="grid grid-cols-2 gap-2 text-sm">
           <div className="rounded bg-slate-800 p-2">OK: <b className="text-ok">{summary.okCount}</b></div>
@@ -35,7 +34,7 @@ export function Dashboard() {
       </section>
 
       <section className="card">
-        <h2 className="mb-2 font-semibold">Canlý Log</h2>
+        <h2 className="mb-2 font-semibold">CanlÃ½ Log</h2>
         <ul className="max-h-[50vh] space-y-1 overflow-auto text-sm">
           {latest.map((event) => (
             <li key={event.id} className="rounded bg-slate-800 p-2">
