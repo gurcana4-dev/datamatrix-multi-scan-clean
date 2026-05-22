@@ -4,7 +4,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { DecoderEngine } from "@/services/decoder/decoder-engine";
 import { startOptimizedCamera, type CameraControl } from "@/services/camera/camera-engine";
 import { useScanStore } from "@/hooks/use-scan-store";
-
 export function useCameraScanner(enabled: boolean) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
