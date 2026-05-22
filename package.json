@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "next dev -p 3100",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "next start -p 3100",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@sec-ant/zxing-wasm": "^2.2.4",
     "@zxing/library": "^0.21.3",
     "dexie": "^4.2.1",
     "jsqr": "^1.4.0",
