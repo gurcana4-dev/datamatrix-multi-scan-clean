@@ -1,6 +1,4 @@
 /// <reference lib="webworker" />
-
-import { prepareZXingModule, readBarcodes, ZXING_WASM_SHA256 } from "@sec-ant/zxing-wasm";
 import { BarcodeFormat, DecodeHintType, MultiFormatReader, RGBLuminanceSource, BinaryBitmap, HybridBinarizer } from "@zxing/library";
 import jsQR from "jsqr";
 import type { DecodedItem } from "@/types/domain";
